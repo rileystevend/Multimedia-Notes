@@ -1,6 +1,6 @@
 import { duration } from 'moment';
 
-const durationToStr = (ms) => {
+export const durationToStr = (ms) => {
   const h = duration(ms).hours();
   const m = duration(ms).minutes();
   const s = duration(ms).seconds();
@@ -18,6 +18,3 @@ const durationToStr = (ms) => {
   return `${hStr}${mStr}:${sStr}`;
 };
 
-export {
-  durationToStr,
-};
